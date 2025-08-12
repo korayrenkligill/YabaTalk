@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using System.Security.Claims;
 using Microsoft.IdentityModel.JsonWebTokens; 
-using YabaTalk.Application.interfaces;
+using YabaTalk.Application.Interfaces;
 
 namespace YabaTalk.Infrastructure.Services.Auth
 {

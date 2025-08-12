@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore.Design.Internal;
 using YabaTalk.Application.Dtos;
 using YabaTalk.Application.Dtos.Auth;
-using YabaTalk.Application.interfaces;
-using YabaTalk.Application.interfaces.repository;
-using YabaTalk.Application.interfaces.service;
+using YabaTalk.Application.Interfaces;
+using YabaTalk.Application.Interfaces.Repository;
+using YabaTalk.Application.Interfaces.Service;
 using YabaTalk.Domain.Entity;
 
 namespace YabaTalk.Infrastructure.Services.Auth
@@ -43,8 +43,6 @@ namespace YabaTalk.Infrastructure.Services.Auth
                 LastName = current.LastName,
                 PhoneE164 = current.PhoneE164,
                 CreatedAt = current.CreatedAt,
-                Chats = current.Chats,
-                MessagesSent = current.MessagesSent
             };
 
             if (!string.IsNullOrEmpty(current.AvatarUrl))
@@ -81,8 +79,6 @@ namespace YabaTalk.Infrastructure.Services.Auth
                 LastName = current.LastName,
                 PhoneE164 = current.PhoneE164,
                 CreatedAt = current.CreatedAt,
-                Chats = current.Chats,
-                MessagesSent = current.MessagesSent
             };
 
             if (!string.IsNullOrEmpty(current.AvatarUrl))
@@ -138,8 +134,6 @@ namespace YabaTalk.Infrastructure.Services.Auth
                 AvatarUrl = user.AvatarUrl,
                 About = user.About,
                 CreatedAt = user.CreatedAt,
-                Chats = user.Chats,
-                MessagesSent = user.MessagesSent
             };
 
             return ResponseDto<UserRespDto>.Ok(newUser, "Kullanıcı başarıyla eklendi");

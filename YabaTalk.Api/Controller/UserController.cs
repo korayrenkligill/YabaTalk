@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using YabaTalk.Application.Dtos.Auth;
-using YabaTalk.Application.interfaces.service;
+using YabaTalk.Application.Interfaces.Service;
 
 namespace YabaTalk.Api.Controller
 {

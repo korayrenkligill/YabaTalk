@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using YabaTalk.Application.interfaces.repository;
+using YabaTalk.Application.Interfaces.Repository;
 using YabaTalk.Domain.Entity;
 using YabaTalk.Infrastructure.Database;
 

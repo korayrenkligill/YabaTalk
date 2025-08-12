@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using YabaTalk.Domain.Enums;
 
 namespace YabaTalk.Domain.Entity
 {
@@ -15,6 +16,7 @@ namespace YabaTalk.Domain.Entity
 
         [Required, MaxLength(4000)]
         public string Body { get; set; } = default!;
+        [Required] public MessageStatus Status { get; set; } = MessageStatus.Pending;
 
         public DateTimeOffset SentAt { get; set; } = DateTimeOffset.UtcNow;
     }

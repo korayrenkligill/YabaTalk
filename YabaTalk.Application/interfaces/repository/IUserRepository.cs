@@ -1,6 +1,6 @@
 ﻿using YabaTalk.Domain.Entity;
 
-namespace YabaTalk.Application.interfaces.repository
+namespace YabaTalk.Application.Interfaces.Repository
 {
     public interface IUserRepository
     {

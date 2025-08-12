@@ -1,7 +1,7 @@
 ﻿using YabaTalk.Application.Dtos;
 using YabaTalk.Application.Dtos.Auth;
 
-namespace YabaTalk.Application.interfaces.service
+namespace YabaTalk.Application.Interfaces.Service
 {
     public interface IUserService
     {
